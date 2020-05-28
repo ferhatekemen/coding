@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ferhat EKEMEN</title>
+</head>
+
+
+<style>
+* {  padding: 0;
+  margin: 0;
+}
+
+html {scroll-behavior: smooth}
+
+body {
+  font-family: serif;
+  color: white;
+  position: relative;
+  background: rgba(0, 45, 0, 1);
+  display: block;
+  max-width: 100%;
+  font-size: 3vmin;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  background: darkorange;
+  font-size: 1.2em;
+  z-index: 1;
+}
+
+#navbar ul {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2vmin;
+  margin: auto;
+}
+
+#navbar ul li {
+  margin: 2vmin 2vmin;
+}
+#navbar ul a:hover {
+  background: gray;
+}
+
+#welcome-section {
+  margin: auto;
+  font-size: 5vmin;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+p {
+  color: orange;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10vh;
+  font-weight: bold;
+  font-size: 4vmin;
+}
+figure {
+  padding: 3vmin;
+}
+
+#projects img {
+  height: auto;
+  border: dotted 1px;
+  box-shadow: 3px 3px lightpink;
+  width: 40vw;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
+
+#projects a {
+  text-decoration: none;
+}
+
+#projects figcaption {
+  padding: 3vmin;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#projects figcaption p {
+  color: transparent;
+}
+
+#projects a:hover figcaption p {
+  color: orange;
+  font-weight: bold;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 83vh;
+}
+
+#contact > ul {
+  display: flex;
+  padding-left: 0;
+  font-size: 5vmin;
+}
+#contact li {
+  margin: 4vmin;
+}
+
+footer {
+  height: 5vh;
+  border-style: solid none none;
+  border-color: hsla(170, 100%, 50%, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5vmin 0vmin;
+  font-size: 3.5vmin;
+  color: white;
+}
+
+#contact a:hover {
+  position: relative;
+  animation-name: down;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.25, 0.05, 0.75, 2);
+  animation-fill-mode: forwards;
+}
+
+@keyframes down {
+  0% {
+    position: relative;
+    top: 0px;
+  }
+  100% {
+    position: relative;
+    top: 1vmin;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 390px) {
+  #projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3vmin;
+    align-items: center;
+    height: 85vh;
+    justify-items: center;
+    font-weight: bold;
+    font-size: 4vmin;
+    padding-top: 10vh;
+  }
+}
+
+</style>
+
+
+
+<body>
+  <nav id="navbar">
+    <ul>
+      <a href="#welcome-section">
+        <li>About</li>
+      </a>
+      <a href="#projects">
+        <li>Work</li>
+      </a>
+      <a href="#contact">
+        <li>Contact</li>
+      </a>
+    </ul>
+  </nav>
+  <main>
+    <section id="welcome-section">
+      <h1>Hey I am Ferhat</h1>
+      <br>
+      <p><em>a web developer</em></p>
+    </section>
+
+    <section id="projects">
+      <figure><a href="https://codepen.io/ferhat41/full/wvvaejr" class="project-tile" target="_blank"><img alt="Tribute Page" src="https://screenshot.codepen.io/1747164.wvvaejr.small.8c1a83a5-45c9-4ac6-a8a6-ad9c8e5bc39a.png">
+         <figcaption><p><</p>Tribute Page<p>/></p></figcaption></a>
+      </figure>
+
+      <figure><a href="https://codepen.io/ferhat41/full/YzzXgvw" class="project-tile" target="_blank"><img alt="Survey" src="https://screenshot.codepen.io/1747164.YzzXgvw.small.621ebf05-2888-4f46-8876-7dd87e8e93a1.png">
+         <figcaption><p><</p>Survey<p>/></p></figcaption></a>
+      </figure>
+
+      <figure><a href="https://codepen.io/ferhat41/full/VwweWzN" target="_blank"><img alt="Landing Page" src="https://screenshot.codepen.io/1747164.VwweWzN.small.003714d7-429b-4a0d-bda2-f0eceeb7e7cd.png">
+         <figcaption><p><</p>Landing Page<p>/></p></figcaption></a>
+      </figure>
+
+      <figure><a href="https://codepen.io/ferhat41/full/OJJMpeE" target="_blank"><img alt="Technical Documentation Page" src="https://screenshot.codepen.io/1747164.OJJMpeE.small.126a1ef5-fcbb-4834-ae3d-b9003577f23c.png">
+         <figcaption><p><</p>Technical Documentation Page<p>/></p></figcaption></a>
+      </figure>
+    </section>
+
+    <section id="contact">
+      <h1>Let's work together...</h1>
+      <p>How do you take your coffee?</p>
+      <br>
+      <ul>
+        <a href="https://www.facebook.com/ferhatekemen41" target="_blank">
+          <li>Facebook</li>
+        </a>
+        <a href="https://www.linkedin.com/in/ferhat-ekemen-29abba33/" id="linkedin" target="_blank">
+          <li>Linkedin</li>
+        </a>
+        <a href="https://github.com/ferhatekemen" target="_blank" id="profile-link">
+          <li>Github</li>
+        </a>
+      </ul>
+
+    </section>
+  </main>
+  <footer id="footer"><span><em>**Ekemen's portfolio</em></span><span>© created with <a href="codepen.io" tatget="_blank">Codepoen.io</a></span></footer>
+</body>
+
+</html>

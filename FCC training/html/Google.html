@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head><link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+  <title>Google</title>
+</head>
+<style>
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* 1160px-540px */
+
+
+:root {
+  background: white;
+}
+
+html {display: block;
+}
+body {display:block;
+  text-align: center;
+  font-size: 1em;
+  min-width: 1160px;
+  min-height: 540px;
+  font-family: Arial
+  }
+
+
+li {
+  padding: 1em;
+  list-style: none;
+}
+footer > li {padding: 0.7em}
+
+#logo {display:inline-block;
+width: 100%;
+margin:auto;}
+
+input {
+  min-width: 500px;
+  border-radius: 1.5em;
+  border :solid 1px rgba(120, 120, 120, 0.4);
+  height: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1.5em;
+}
+
+input:hover {box-shadow: 1px 1px 2px 0px rgba(120, 120, 120, 0.3), -1px -1px 3px 0px rgba(120, 120, 120, 0.3);
+border: none;}
+
+button {
+  border-radius: 1em;
+  background: transparent;
+  border:none;
+  cursor: pointer;
+}
+
+.btn {padding:1em;
+  margin: auto 0.2em;
+  border-radius: 0.4em;
+background: rgba(163, 100, 100, 0.1);
+opacity:0.9
+}
+.btn:hover {  border-radius: 0.4em;
+  margin: auto 0.2em;
+  border :solid 1px rgba(120, 120, 120, 0.4);
+padding:1em;
+background: rgba(120, 120, 120, 0.1)
+}
+
+a {text-decoration:none;
+color:black;
+cursor: pointer}
+a:hover {text-decoration: underline}
+
+
+#navbar {font-size: 1em;}
+
+
+#navbar > ul,
+#navbar > ul > #left,
+#navbar > ul > #right,
+footer > ul,
+footer > ul > #footer-left,
+footer > ul > #footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#about {order: 1}
+#store {order:2}
+#all {order:3}
+#images2 {order:4}
+
+footer {position: absolute;
+bottom:0;
+font-size: 0.9em;
+width:100%;
+min-width:inherit;
+opacity:0.8;
+border-top: solid 1px rgba(120, 120, 120, 0.5);
+background: rgba(120, 120, 120, 0.1)}
+
+#navbar, footer { display: flex;
+  flex-direction: row;
+  justify-content: space-between}
+
+
+h1 {display:inline-block;
+font-weight: bold;
+font-family: 'Poiret one';
+  font-size: 5em;
+  padding-top: 1.5em;
+}
+
+#G,
+#g2 {
+  color: #4885ed;
+}
+
+#o,
+#e {
+  color: #db3236;
+}
+#o2 {
+  color: #f4c20d;
+}
+#l {
+  color: #3cba54;
+}
+
+#all, #images2 {display:none}
+
+
+/* NEW MEDIA SETTINGS */
+
+
+@media screen and (max-width: 600px) {
+  html {display: block;
+  max-width:100%;
+  margin: auto;
+  font-size: 3vmin;
+}
+body {display:block;
+  text-align: center;
+  font-size: 2.5vmin;
+  min-width:auto;
+  max-width: 100%;  
+  font-family: Arial
+  }
+
+
+li {
+  padding: 1em;
+  list-style: none;
+}
+footer > li {padding: 0.7em}
+
+#logo {display: inline-block;
+width:100%;
+margin: auto;
+}
+
+input {
+  border-radius: 1.5em;
+  border :solid 1px rgba(120, 120, 120, 0.4);
+  height: 3vmin;
+  min-width: auto;
+  width:90%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1.5em;
+}
+
+input:hover {box-shadow: 1px 1px 2px 0px rgba(120, 120, 120, 0.3), -1px -1px 3px 0px rgba(120, 120, 120, 0.3);
+border: none;}
+
+button {
+  border-radius: 1em;
+  background: transparent;
+  border:none;
+  cursor: pointer;
+}
+
+.btn {padding:1em;
+  margin: auto 0.2em;
+  border-radius: 0.4em;
+background: rgba(163, 100, 100, 0.1);
+opacity:0.9
+}
+.btn:hover {  border-radius: 0.4em;
+  margin: auto 0.2em;
+  border :solid 1px rgba(120, 120, 120, 0.4);
+padding:1em;
+background: rgba(120, 120, 120, 0.1)
+}
+
+a {text-decoration:none;
+color:black;
+cursor: pointer;
+}
+
+a:hover {text-decoration: none;}
+
+
+#navbar li a:hover {border-bottom: solid 1px blue;
+color: blue;}
+#navbar {font-weight: bold;}
+
+
+#navbar > ul,
+#navbar > ul > #left,
+#navbar > ul > #right,
+footer > ul,
+footer > ul > #footer-left,
+footer > ul > #footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer {position: absolute;
+text-align: center;
+bottom:0;
+font-size: 2.5vmin;
+width:100%;
+min-width:inherit;
+opacity:0.8;
+border-top: solid 1px rgba(120, 120, 120, 0.5);
+background: rgba(120, 120, 120, 0.1)}
+
+#navbar, footer { display: flex;
+  flex-direction: row;
+  justify-content: center}
+
+
+h1 {font-weight: bold;
+font-family: 'Poiret one';
+font-size: 12vmin;
+  padding-top: 1.5em;
+}
+
+#G,
+#g2 {
+  color: #4885ed;
+}
+
+#o,
+#e {
+  color: #db3236;
+}
+#o2 {
+  color: #f4c20d;
+}
+#l {
+  color: #3cba54;
+}
+
+footer > #footer-left, .btn, #gmail, #images, #about, #store {display:none}
+
+#all, #images2 {display:block;}
+
+#navbar {display: flex;
+margin-bottom: 3em;
+justify-content: space-between;}
+
+#footer-left {display:flex;
+justify-content: center;
+}
+
+
+}
+</style>
+
+
+
+
+
+
+
+<body>
+
+  <!-- nav -->
+
+  <nav id="navbar" class="navbar">
+    <ul id="left">
+        <li><a href="#" target="_blank" id="all">ALL</a></li>
+        <li><a href="#" target="_blank" id="images2">IMAGES</a></li>
+      <li><a href="https://about.google/?fg=1&utm_source=google-DE&utm_medium=referral&utm_campaign=hp-header" target="_blank" id="about">About</a></li>
+      <li><a href="https://store.google.com/DE?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-DE" target="_blank" id="store">Store</a></li>
+           
+     </ul>
+    <ul id="right">
+      <li><a href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl" target="_blank" id="gmail">Gmail</a></li>
+      
+      <li><a href="https://www.google.de/imghp?hl=en&tab=wi&authuser=0&ogbl" target="_blank" id="images">Images</a></li>
+      
+      <li>
+        <a href="https://www.google.de/intl/en/about/products?tab=wh" target="_blank">Apps</a></li>
+      <li>
+        <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/" target="_blank">Account</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div id="logo">
+      <h1 id="G">G</h1>
+      <h1 id="o">o</h1>
+      <h1 id="o2">o</h1>
+      <h1 id="g2">g</h1>
+      <h1 id="l">l</h1>
+      <h1 id="e">e</h1>
+    </div>
+    <input id="search" type="search" placeholder="Search Google or type a URL" name="search">
+
+    <div><button class="btn">Google Search</button>
+      <button class="btn">I'm Feeling Lucky</button></div>
+    </main>
+      <footer>
+    <ul id="footer-left">
+      <li><a href="https://www.google.com/intl/en_de/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" target="_blank">Advertising</a></li>
+      <li> <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1" target="_blank">Business</a></li>
+      <li><a href="https://google.com/search/howsearchworks/?fg=1" target="_blank">How Search works</a></li>
+    </ul>
+    <ul id="footer-right">
+      <li>
+        <a href="#">Privacy</a></li>
+      <li>
+        <a href="#">Terms</a></li>
+      <li>
+        <a href="#">Settings</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

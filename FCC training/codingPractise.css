@@ -1,0 +1,9 @@
+        .image {
+            margin-left: 50px
+        }
+
+        #po {
+            color: green;
+            background-color: yellow;
+            display: inline-block
+        }

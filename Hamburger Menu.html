@@ -1,0 +1,73 @@
+<html>
+
+<head>
+
+    
+    
+</head>
+<style>
+    body{
+        margin:0;
+        padding:0;
+        font-size:2vw
+        
+    }
+
+    #navbar {
+        margin:0;
+        font-size:2vw;
+        padding:0;
+        width:0;
+    display:block;
+    position:fixed;
+    top:0;
+    background:linear-gradient(45deg, purple, teal);
+    color:white;
+    height:100%;
+    overflow-x: hidden;
+    transition: 3s;
+filter:grayscale(100%);    
+    filter:opacity(0%);
+    filter:blur(30px);
+    }
+
+    li {
+        list-style: none;
+    }
+
+    span {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+<span onclick="openBar()">&#9776; open</span>
+<nav id="navbar">
+    <ul>
+        <li>About</li>
+        <li>Program</li>
+        <li onclick="closeBar()">Contact</li>
+    </ul>
+</nav>
+<script>
+function openBar(){
+    var aa= document.getElementById("navbar").style;
+    aa.width="15vw";
+    aa.filter='opacity(100%)';
+    aa.filter="grayscale(0%)";
+    aa.filter='blur(0)'
+}
+
+function closeBar(){
+    var aa= document.getElementById("navbar").style;
+    aa.width="0";
+    aa.filter='opacity(0%)';
+    aa.filter="grayscale(100%)";
+    aa.filter='blur(30px)'
+
+
+
+}
+</script>    </body>
+
+</html> 

@@ -1,0 +1,9 @@
+{
+    "name": "@runkit/ferhatekemen_5e0506e860ac71001a66105e",
+    "version": "0.0.0-master",
+    "main": "./lib/5e0506e860ac71001a66105e",
+    "dependencies": {},
+    "scripts": {
+        "install": "node scripts/install.js"
+    }
+}

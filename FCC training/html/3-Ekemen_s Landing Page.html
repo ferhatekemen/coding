@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {display: block;
+  font-size: 1em;
+  max-width: 100%;
+  margin: auto;
+}
+
+#header {position: fixed;
+  width: 100%;
+   top: 0;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  z-index: 1;
+  padding-bottom: 30px;
+}
+
+#header-img {
+  width: 100px;
+  height: 100px;
+  margin: 10px 0 0 10px;
+}
+
+#nav-bar {
+  display: flex;
+  margin: 10px 20px;
+  justify-content: space-around;
+}
+
+#sp2 {
+  text-align: center;
+  width: 130px;
+}
+.nav-link button {
+  background: none;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-link2 button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#king {
+  position: relative;
+  top: 150px;
+  text-align: center;
+  margin: auto;
+  max-width: 100%;
+  display: block;
+}
+#email {
+  display: block;
+  margin: 20px auto;
+  padding: 1em;
+}
+
+#submit {
+  font-weight: bold;
+  padding: 0.5em 1em;
+  text-decoration: lowercase;
+  font-size: 1em;
+  background: lightgreen;
+  border: none;
+}
+
+#features {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  text-align: left;
+}
+
+#video {
+  width: 80%;
+}
+
+#pricing {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+}
+
+#item {
+  width: 240px;
+  border: dotted 1px grey;
+  padding-bottom: 25px;
+  margin: 10px;
+}
+
+#item-name {
+  margin: 0;
+  padding: 0;
+  background: lightcyan;
+}
+
+#item-price {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#price-btn {
+  background: lightgreen;
+  padding: 1em;
+  border: none;
+  font-size: 0.8em;
+}
+
+footer {
+  background: lightgray;
+  max-width: 100%;
+  text-align: right;
+  padding: 5px 10px 10px 0px;
+}
+
+@media screen and (max-width: 720px) {
+  #header {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: white;
+    z-index: 1;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  #nav-bar {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    margin: 10px 20px;
+  }
+
+  #king {
+    top: 220px;
+  }
+
+  #pricing {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 20px;
+  }
+}
+
+@media screen and (min-width: 1300px)
+{
+  body {display: block;
+  font-size: 1em;
+  max-width: 1280px;
+  margin: auto;
+}
+
+#header {position: fixed;
+  width: 1280px;
+   top: 0;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  z-index: 1;
+  padding-bottom: 30px;
+}
+ 
+}
+
+</style>
+
+<body>
+<header id="header"><img id="header-img" src="https://images.hepsiburada.net/assets/hepsiburada-logo.png" alt="company-logo">
+  <nav id="nav-bar">
+    <a href="#features" class="nav-link"><button>Features</button></a>
+    <a href="#video" class="nav-link" id="sp2"><button>How It Works</button></a>
+    <a href="#pricing" class="nav-link"><button>Pricing</button></a>
+  </nav>
+</header>
+<main id="king">
+  <div>
+    <h1>Handcrafted, home-made masterpieces</h1>
+    <form action="https://www.freecodecamp.com/email-submit" id="form"><input id="email" type="email" name="email" placeholder="Enter your mail address" required>
+      <input id="submit" type="submit" value="Get Started">
+    </form>
+  </div>
+  <section id="features">
+    <h2>Premium Materials</h2>
+    <p>
+      Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+    </p>
+    <h2>Fast Shipping</h2>
+    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+
+    <h2>Quality Assurance</h2>
+    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+  </section>
+  <section>
+    <iframe id="video" height="400" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen>
+  </iframe>
+  </section>
+
+  <section id="pricing">
+    <div id="item">
+      <h3 id="item-name">TENOR TROMBONE</h3>
+      <p id="item-price">
+        $600</p>
+      <p>Lorem ipsum.</p>
+      <p>Lorem ipsum.</p>
+      <p> Lorem ipsum dolor.</p>
+      <p>Lorem ipsum.</p>
+      <button id="price-btn">SELECT</button>
+
+    </div>
+    <div id="item">
+      <h3 id="item-name">TENOR TROMBONE</h3>
+      <p id="item-price">
+        $600</p>
+      <p>Lorem ipsum.</p>
+      <p>Lorem ipsum.</p>
+      <p> Lorem ipsum dolor.</p>
+      <p>Lorem ipsum.</p>
+      <button id="price-btn">SELECT</button></div>
+    <div id="item">
+      <h3 id="item-name">TENOR TROMBONE</h3>
+      <p id="item-price">
+        $600</p>
+      <p>Lorem ipsum.</p>
+      <p>Lorem ipsum.</p>
+      <p> Lorem ipsum dolor.</p>
+      <p>Lorem ipsum.</p>
+      <button id="price-btn">SELECT</button></div>
+  </section>
+
+  <footer>
+    <nav id="nav-bar2">
+      <a href="#" class="nav-link2"><button>Privacy</button></a>
+      <a href="#" class="nav-link2"><button>Terms</button></a>
+      <a href="#" class="nav-link2"><button>Contact</button></a>
+    </nav>Copyright 2016, Original Trombones</footer>
+</main>
+</body>
+
+</html>

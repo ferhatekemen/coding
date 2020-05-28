@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+body {
+  background: linear-gradient(-25deg, red, cyan);
+  max-width: 100%;
+  font-weight: bold;
+  margin: auto;
+}
+.king {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  height: auto;
+  background: white;
+  opacity: 0.8;
+  border-radius: 10px;
+  box-shadow: 10px 10px 0 0 #aaf;
+}
+#survey-form {
+  display: grid;
+  align-items: center;
+  max-width: 550px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 10px;
+}
+#email-label,
+#name-label,
+#number-label,
+.p {
+  display: grid;
+  justify-items: end;
+  text-align: end;
+}
+#name,
+#email,
+#number,
+select,
+textarea {
+  margin: 0 10px 0 0;
+}
+button {
+  grid-area: 9/1/10/3;
+  padding: 10px 20px;
+  background-color: lightgreen;
+  margin: 10px auto;
+  width: auto;
+  text-align: center;
+  justify-self: center;
+}
+
+h1,
+p {
+  text-align: center;
+  padding: 10px;
+}
+
+.de label {
+  display: block;
+}
+
+@media (max-width: 300px) {
+  #survey-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+}
+
+</style>
+
+<body>
+<h1 id="title">Survey Form</h1>
+<div class="king">
+  <p id="description" style="text-align:center;">Let us know how we support you better</p>
+  <form action="" id="survey-form">
+    <label for="name" id="name-label">* Name:</label>
+    <input id="name" type="text" placeholder="Enter your name" name="data" required>
+    <label for="email" id="email-label">* Email:</label>
+    <input id="email" type="email" placeholder="Enter your Email" name="data" required>
+    <label for="number" id="number-label">* Age:</label>
+    <input id="number" type="number" min="18" max="70" placeholder="Age" name="data" required>
+    <p class="p">Which option best describes your workout intensity?</p>
+    <select id="dropdown"><option disabled value>Select an option</option>
+      <option value="1">1 time per week</option>
+        <option value="2"> 2 times per week</option>
+        <option value="3" selected>3 times per week</option>
+      <option value="4">4 times per week</option>
+    </select>
+    <p class="p"> How likely is that you would recommend SmartFit to a friend?
+    </p>
+    <div>
+      <label for="definetely"><input type="radio" name="recommend" id="definetely" checked value="1">Definetely</label>
+      <label for="maybe"><input id="maybe" type="radio" name="recommend" value="2">Maybe</label>
+      <label for="notsure"><input id="notsure" type="radio" name="recommend" value="3">Not sure</label>
+    </div>
+
+    <p class="p">Which part do you like most?</p>
+
+    <select><option selected disabled value>Select an option</option>
+        <option value="Swimming">Swimming</option>
+        <option value="Fighting Sports">Fighting Sports</option>
+        <option value="Fitness">Fitness</option>
+  </select>
+    <p class="p">Things that probably you will be interested in the future:</p>
+    <div class="de">
+      <label for="Fencing">
+      <input id="Fencing" type="checkbox" name="news" value="Fencing">Fencing</label>
+      <label for="Pilates">
+      <input id="Pilates" type="checkbox" name="news" value="Pilates">Pilates<label>
+    <label for="Fighting Sports(Wing-Chun)">
+      <input id="Fighting Sports(Wing-Chun)" type="checkbox" name="news" value="Fighting Sports(Wing-Chun)">Fighting Sports(Wing-Chun)<label>
+     </div>
+    <p class="p"> Any Comments or Suggestions?</p>
+    <textarea placeholder="Enter your comment here..."></textarea>
+    <button id="submit" type="submit" name="submit">Submit</button>
+  </form>
+  </p>
+</div></body>
+
+</html>
