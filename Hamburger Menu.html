@@ -1,8 +1,6 @@
 <html>
 
 <head>
-
-    
     
 </head>
 <style>
@@ -10,64 +8,71 @@
         margin:0;
         padding:0;
         font-size:2vw
-        
-    }
+        }
 
     #navbar {
         margin:0;
         font-size:2vw;
         padding:0;
         width:0;
-    display:block;
-    position:fixed;
-    top:0;
-    background:linear-gradient(45deg, purple, teal);
-    color:white;
-    height:100%;
-    overflow-x: hidden;
-    transition: 3s;
-filter:grayscale(100%);    
-    filter:opacity(0%);
-    filter:blur(30px);
+        display:block;
+        position:fixed;
+        top:0;
+        background:linear-gradient(45deg, purple, teal);
+        color:white;
+        height:100%;
+        overflow-x: hidden;
+        transition: 3s;
+        filter:grayscale(100%);    
+        filter:opacity(0%);
+        filter:blur(30px);
     }
 
     li {
         list-style: none;
+        margin-left: -20px;
     }
 
     span {
         cursor: pointer;
-    }
+       }
+
+    .clsBtn {display:block;text-align: right; color:block; margin-right:5px; font-size: 1.5vw;}
 </style>
 
 <body>
-<span onclick="openBar()">&#9776; open</span>
+<span id='mnbtn' onclick="openBar()">&#9776; open</span>
 <nav id="navbar">
+    <span class='clsBtn' onclick="closeBar()">x</span>
     <ul>
         <li>About</li>
         <li>Program</li>
-        <li onclick="closeBar()">Contact</li>
+        <li>Contact</li>
     </ul>
 </nav>
 <script>
+var nav= document.getElementById("navbar").style;
+var mnbtn= document.getElementById("mnbtn").style;
+
 function openBar(){
-    var aa= document.getElementById("navbar").style;
-    aa.width="15vw";
-    aa.filter='opacity(100%)';
-    aa.filter="grayscale(0%)";
-    aa.filter='blur(0)'
+    nav.width="15vw";
+    nav.filter='opacity(100%)';
+    nav.filter="grayscale(0%)";
+    nav.filter='blur(0)';
+    mnbtn.display='none'
+
 }
 
 function closeBar(){
-    var aa= document.getElementById("navbar").style;
-    aa.width="0";
-    aa.filter='opacity(0%)';
-    aa.filter="grayscale(100%)";
-    aa.filter='blur(30px)'
-
-
-
+    nav.width="0";
+    nav.filter='opacity(0%)';
+    nav.filter="grayscale(100%)";
+    nav.filter='blur(30px)';
+    mnbtn.display='initial'
 }
-</script>    </body>
+
+</script>
+
+</body>
 
 </html> 
