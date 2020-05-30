@@ -14,20 +14,23 @@
         margin:0;
         font-size:2vw;
         padding:0;
-        width:0;
+        width:12vw;
         display:block;
         position:fixed;
         top:0;
-        background:linear-gradient(45deg, purple, teal);
+        left:-12vw;
+        background:linear-gradient(45deg,wheat,teal);
         color:white;
         height:100%;
         overflow-x: hidden;
-        transition: 3s;
-        filter:grayscale(100%);    
+        transition: 1s;
         filter:opacity(0%);
-        filter:blur(30px);
+        /*filter:grayscale(100%);*/    
+       /*filter:blur(30px);*/
     }
-
+    #mnbtn {
+        margin-left: 1vw;
+    }
     li {
         list-style: none;
         margin-left: -20px;
@@ -37,10 +40,11 @@
         cursor: pointer;
        }
 
-    .clsBtn {display:block;text-align: right; color:block; margin-right:5px; font-size: 1.5vw;}
+    .clsBtn {display:block;text-align: right; color:block; margin-right:5px; font-size: 1.5vw; opacity: .5;}
+
 </style>
 
-<body>
+<body id='main'>
 <span id='mnbtn' onclick="openBar()">&#9776; open</span>
 <nav id="navbar">
     <span class='clsBtn' onclick="closeBar()">x</span>
@@ -53,22 +57,23 @@
 <script>
 var nav= document.getElementById("navbar").style;
 var mnbtn= document.getElementById("mnbtn").style;
-
+var main= document.getElementById("main").style;
 function openBar(){
-    nav.width="15vw";
+    nav.left="0vw";
     nav.filter='opacity(100%)';
-    nav.filter="grayscale(0%)";
-    nav.filter='blur(0)';
-    mnbtn.display='none'
-
+    //nav.filter="grayscale(0%)";
+    //nav.filter='blur(0)';
+    mnbtn.display='none';
+    main.background='rgba(0,0,0,.2)';
 }
 
 function closeBar(){
-    nav.width="0";
+    nav.left="-12vw";
     nav.filter='opacity(0%)';
-    nav.filter="grayscale(100%)";
-    nav.filter='blur(30px)';
-    mnbtn.display='initial'
+    //nav.filter="grayscale(100%)";
+    //nav.filter='blur(30px)';
+    mnbtn.display='initial';
+    main.background='rgba(0,0,0,0)';
 }
 
 </script>
