@@ -43,4 +43,4 @@ for(let i=0; i < Sort.length; i++) {let onGame= new Game(i); TheGame.push(onGame
 
 Allgame();
 
-TheGame.filter(a => a.A_C_S ==="salih").map(a => a.tr);;
+TheGame.filter(a => a.A_C_S ==="salih").map(a => a.tr);
