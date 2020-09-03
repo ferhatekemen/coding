@@ -11,5 +11,5 @@ document.write((function aa() { return 2 * 3 })(), `\n Bu satir 5 harfli kelimel
         };
 
         (function cc() {
-            setInterval(bb, 2000)
+            setInterval(bb, 4000)
         })(); 
