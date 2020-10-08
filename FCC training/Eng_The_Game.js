@@ -43,7 +43,7 @@ for(let i=0; i < Sort.length; i++) {let onGame= new Game(i); TheGame.push(onGame
 
 Allgame();
 
-var result=TheGame.filter(a => a.Value===15).map(a =>a);
+var result=TheGame.filter(a => a.Value===0).map(a =>a);
 
 var el=document.getElementById("liste");
 var el2=document.getElementById("filter");
